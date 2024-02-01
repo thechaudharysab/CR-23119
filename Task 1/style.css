@@ -43,7 +43,7 @@ body {
     right: 0;
     bottom: 0;
     background: radial-gradient(circle at center, transparent 0%, black 60%);
-    pointer-events: none; /* Ensures the gradient doesn't interfere with any interactive elements */
+    pointer-events: none;
   }
 
 /* Background of the webpage END */
@@ -83,11 +83,11 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 10px; /* Flare size */
-    height: 10px; /* Flare size */
-    background-color: #fff; /* Adjust color as needed */
+    width: 10px;
+    height: 10px; 
+    background-color: #fff; 
     border-radius: 50%;
-    animation: flare 5s infinite; /* Flare animation every 5 seconds */
+    animation: flare 5s infinite; 
 }
 
 .pre-text {
@@ -160,15 +160,14 @@ button:hover {
         opacity: 1;
     }
     100% {
-        transform: translateX(calc(100% - 80px)); /* Adjust based on distance to circle */
+        transform: translateX(calc(100% - 80px)); 
         opacity: 0;
     }
 }
 
 .content {
     position: relative;
-    z-index: 2; /* Placing the content above the gradient */
-}
+    z-index: 2; 
 
 .circle-row {
     display: flex;
