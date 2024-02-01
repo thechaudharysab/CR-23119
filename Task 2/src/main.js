@@ -23,9 +23,8 @@ function init() {
 
   const textureLoader = new THREE.TextureLoader();
   const earthTexture = textureLoader.load(
-    "2k_earth_daymap.jpg",
+    "/2k_earth_daymap.jpg",
     function (texture) {
-      //   texture.offset.set(-0.01, 0);
       texture.wrapS = THREE.RepeatWrapping;
     }
   );
